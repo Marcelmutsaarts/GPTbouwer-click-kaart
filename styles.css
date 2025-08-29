@@ -230,8 +230,8 @@ body {
 
 .hotspot {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 24px;
+    height: 24px;
     transform: translate(-50%, -50%);
     cursor: pointer;
     z-index: 100;
@@ -247,12 +247,12 @@ body {
 }
 
 .hotspot-circle {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border: 3px solid white;
+    border: 2px solid white;
     border-radius: 50%;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -265,12 +265,7 @@ body {
 }
 
 .hotspot-pulse {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: rgba(102, 126, 234, 0.4);
-    animation: pulse 2s ease-out infinite;
+    display: none;
 }
 
 @keyframes pulse {
@@ -286,7 +281,7 @@ body {
 
 .hotspot-icon {
     color: white;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: bold;
     z-index: 1;
 }
@@ -376,23 +371,23 @@ body {
     }
     
     .hotspot {
-        width: 35px;
-        height: 35px;
+        width: 22px;
+        height: 22px;
     }
     
     .hotspot-circle {
-        width: 25px;
-        height: 25px;
+        width: 18px;
+        height: 18px;
     }
     
     .hotspot-icon {
-        font-size: 14px;
+        font-size: 9px;
     }
 }
 
 /* SVG Hotspot Styles */
 .svg-pulse {
-    animation: svg-pulse 2s ease-out infinite;
+    display: none;
 }
 
 @keyframes svg-pulse {
